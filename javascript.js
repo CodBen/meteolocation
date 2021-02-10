@@ -9,3 +9,10 @@ const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + ville + '&app
 
 // je stocke mon api 
 
+let requete = new XMLHttpRequest();
+requete.open('GET', url);
+// je défini ma requete
+requete.responseType = 'json';
+
+requete.send();
+// j'envoie
